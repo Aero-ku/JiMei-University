@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+html,body{
+    height:100%;
+    width:100%;
+    background:url(../img/bg-1.jpg) repeat;
+}
+body{
+    position:relative;
+}
+.top{
+    position:relative;
+    height:107px;
+    width:100%;
+    background:url(../img/top_02.jpg) ;
+    background-size:repeat;
+    background-position:-170px 0px;
+}
+.top .logo{
+    position:absolute;
+    height:67px;
+    width:238px;
+    background:url(../img/logo.png);
+    top:20px;
+    left:132px;
+}
+.top ul{
+    position:absolute;
+    width:336px;
+    height:40px;
+    right:145px;
+    top:-1px;
+}
+clearFloat::after{
+    display:block;
+    content:'';
+    clear:both;
+}
+.top ul li{
+    float:left;
+    font-size:12px;
+    text-align:center;
+}
+.top ul li a{
+    display:inline-block;
+    height:14px;
+    text-decoration:none;
+    color:#5e5e5e;
+    padding: 0px 12px;
+    margin:14px 0px;
+    border-right:0.5px solid #ccc;
+}
+.top ul li a:hover{
+    color:red;
+}
+.top ul li:nth-last-child(1) a{
+    border-right:0;
+}
+.top .search{
+    position:absolute;
+    right:150px;
+    top:40px;
+}
+.top .search .search-input{
+    width: 208px;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 10px;
+    border: 1px solid #dedede;
+    background: #fff;
+    border-right: 0;
+    float: left;
+}
+/*兼容字体颜色*/
+input::-webkit-input-placeholder{
+    color:#000;
+    font-size:16px;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#000;
+    font-size:16px;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#000;
+    font-size:16px;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#000;
+    font-size:16px;
+}
+.top .search .search-bg{
+    display:inline-block;
+    cursor:pointer;
+    height:32px;
+    width:50px;
+    background:url(../img/search-btn.jpg);
+}
+.menu-nav{
+    position:relative;
+    height:42px;
+    width:100%;
+    background:#e60012;
+}
+.menu-nav ul{
+    position:absolute;
+    left:12%;
+    font-size:16px;
+}
+.menu-nav ul li{
+    height:42px;
+    line-height:42px;
+    float:left;
+    width:125px;
+    text-align:center;
+}
+.menu-nav ul li a{
+    color:#fff;
+    padding-right:32px;
+    text-decoration:none;
+    border-right:0.3px solid #fff;
+}
+.content1{
+    position:relative;
+    height:260px;
+    width:100%;
+}
+.lunbo{
+    position:relative;
+    width: 1000px;
+    height: 260px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.lunbo ul{
+    width:1000px;
+    height:260px;
+}
+.lunbo ul li{
+    /* float:left; */
+    position:absolute;
+    width:1000px;
+    height:100%;
+    /* background:url(../img/03.jpg); */
+    top:0px;
+    left:0px;
+    opacity:0;
+}
+.lunbo ul li:nth-of-type(1){
+    opacity:1;
+}
+.btn{
+    position:absolute;
+    height:260px;
+    width:132px;
+    background:#bbb;
+    opacity:0.5;
+}
+.content1 .leftBtn{
+    top:0;
+    left:0px;
+}
+.content1 .rightBtn{
+    top:0;
+    right:0px;
+}
+.content1 .btn img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    cursor:pointer;
+}
+.content1 .sliderIndex{
+    position:absolute;
+    bottom:15px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.content1 .sliderIndex span{
+    display:inline-block;
+    height:12px;
+    width:12px;
+    border-radius:50%;
+    background:#fff;
+    cursor:pointer;
+    margin-right:5px;
+}
+.content1 .sliderIndex .active{
+    background:red;
+}
+.bottom{
+    position:absolute;
+    height: 40px;
+    width:100%;
+    background:#282828;
+}
+.bottom p{
+    text-align:center;
+    height:40px;
+    line-height:40px;
+    color:#eee;
+    font-size:12px;
+}
+.bottom p a{
+    color:#eee;
+    font-size:12px;
+    text-decoration:none;
+}
+
